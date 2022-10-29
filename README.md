@@ -1,4 +1,12 @@
-# Lego EV3 Projects
+# sensor-and-motor-tests
+
+## Overview
+
+Just some initial attempts at using sensors and motors for the LEGO EV3 Brick.
+
+_...and will likely becoming a sort of place for misfit code_ 🙃
+
+---
 
 ## General
 
@@ -8,6 +16,16 @@
 $ ssh robot@ev3dev.local
 ```
 _default password is `maker`_
+
+Printing to VS Code terminal:
+- https://github.com/ev3dev/ev3dev/issues/1307
+
+```python
+import sys
+print("This will print in VS Code terminal", file=sys.stderr)
+```
+
+---
 
 ## [Code Completion](https://github.com/ev3dev/vscode-hello-python#code-completion)
 _from [ev3dev/vscode-hello-python](https://github.com/ev3dev/vscode-hello-python)_
@@ -54,6 +72,13 @@ $ :q # and press enter to exit vim
 ```
 
 ### Resources
+
+This repo will largely make use of the `pybricks` module
+
+- [Creating and running programs](https://pybricks.com/ev3-micropython/startrun.html)
+- [Programmable Hubs](https://pybricks.com/ev3-micropython/hubs.html)
+
+Other resources:
 
 - [Getting Started with ev3dev](https://www.ev3dev.org/docs/getting-started/)
 - [Programming Languages for EV3](https://www.ev3dev.org/docs/programming-languages/)
