@@ -26,7 +26,7 @@ from pybricks.parameters import (
 from pybricks.tools import print, wait, StopWatch
 from pybricks.robotics import DriveBase
 
-from app import App
+from app import BaseApp
 
 ev3brick = EV3Brick()
 
@@ -39,7 +39,7 @@ def main():
     ev3brick.screen.print("Bootin' up . . .")
     sleep(1)
 
-    test_app = App(name="test_app")
+    test_app = BaseApp(name="test_app")
 
     test_app.run()
     test_app.end()

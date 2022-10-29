@@ -3,7 +3,9 @@ from time import sleep
 from pybricks.hubs import EV3Brick
 
 
-class App:
+class BaseApp:
+    """Generic class for a brick's application
+    """
     app_hub = None
 
     def __init__(self, name=""):
@@ -11,12 +13,14 @@ class App:
         self.app_hub = EV3Brick()
 
     def run(self):
+        """TODO"""
         self.app_hub.speaker.beep()
         self._print_and_say(text="BINGO BANGO!", text_to_say="Bingo Bango")
         sleep(2)
         self.app_hub.screen.print("LOOK AT THIS '{}' SHIT".format(self.name))
 
     def end(self):
+        """TODO"""
         sleep(3)
         self._print_and_say(text="Bye forever!")
         sleep(1)
