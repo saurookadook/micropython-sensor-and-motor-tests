@@ -1,0 +1,30 @@
+{
+    "python.languageServer": "Pylance",
+    // "python.analysis.extraPaths": [
+    //     "/usr/local/bin/python",
+    //     "/usr/local/bin/python3",
+    //     "/usr/local/opt/python@3.9/libexec/bin/python",
+    //     "/Users/andysbrain/Development/Personal Projects/lego-ev3-projects/sensor-and-motor-tests/.poetry-cache/virtualenvs/sensor-and-motor-tests-Myl_qjJV-py3.8/lib/python3.8/site-packages"
+    // ],
+    "python.analysis.autoImportCompletions": false,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--follow-imports=silent",
+        "--ignore-missing-imports",
+        "--show-column-numbers"
+    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyCategorySeverity.error": "Information",
+    "python.linting.flake8CategorySeverity.E": "Warning",
+    "python.linting.flake8CategorySeverity.F": "Warning",
+    "python.linting.flake8CategorySeverity.W": "Warning",
+    "python.linting.flake8Args": ["--ignore", "E501 W503"],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.rulers": [120]
+    }
+}
