@@ -26,6 +26,7 @@ from pybricks.parameters import (
 from pybricks.tools import print, wait, StopWatch
 from pybricks.robotics import DriveBase
 
+from app import App
 
 ev3brick = EV3Brick()
 
@@ -38,17 +39,12 @@ def main():
     ev3brick.screen.print("Bootin' up . . .")
     sleep(1)
 
-    ev3brick.speaker.beep()
-    ev3brick.screen.clear()
-    ev3brick.speaker.say("Bingo Bango")
-    ev3brick.screen.print("BINGO BANGO!")
-    sleep(2)
+    test_app = App(name="test_app")
 
+    test_app.run()
+    test_app.end()
     # test_motor = Motor(Port.B)
     # test_motor.run_target(500, 90)
-    sleep(5)
-    ev3brick.speaker.say("Bye forever!")
-    sleep(1)
 
     # ev3brick.speaker.beep(frequency=1000, duration=500)
 
